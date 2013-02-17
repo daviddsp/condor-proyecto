@@ -1,9 +1,9 @@
 <?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html >
+<html xml:lang="es" lang="es">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
+	<!-- <meta name="language" content="es"/> -->
 
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
@@ -22,15 +22,15 @@
 
 <div class="container" id="page">
 
-	<div id="header">
+	<header>
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+	</header><!-- header -->
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'Usuario', 'url'=>array('/usuarios/index')),
+				array('label'=>'Usuario', 'url'=>array('/usuarios/admin')),
 				array('label'=>'Movimientos', 'url'=>array('/movimientos/index')),
 				array('label'=>'Temas', 'url'=>array('/tema/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
@@ -50,11 +50,26 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+	<footer>
+		Copyright &copy; Colegio Universitario de Caracas - PNFI. <?php echo date('Y'); ?>. <br/>
+		Coordinación de Desarrollo Tecnológico.<br/>
+		Este sitio web está liberado bajo una licencia <a href="http://creativecommons.org/licenses/by/3.0/"target="_blank">Creative Commons Attribution 3.0 License</a>.<br/>
+		<?php echo Yii::app()->params['adminEmail']?>
+		<aside>
+	<p>
+    	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+    	</a>
+    	
+    	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    		<img style="border:0;width:88px;height:31px"
+        	src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        	alt="¡CSS Válido!" />
+	</p>
+	</aside>
+	</footer><!-- footer -->
 
 </div><!-- page -->
 
