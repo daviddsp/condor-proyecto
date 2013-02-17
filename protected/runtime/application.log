@@ -1,0 +1,632 @@
+2013/02/16 21:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/
+---
+2013/02/16 21:30:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=gii/model
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=gii/default/index
+---
+2013/02/16 21:36:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  la sintaxis de entrada no es válida para tipo date: «1»
+LINE 1: ...o", "fecha") VALUES ('1', '1', '1', '1', '1', '1', '1', '1')
+                                                                   ^. The SQL statement executed was: INSERT INTO "usuarios" ("login", "password", "nombre", "apellido", "correo_electronico", "profesion", "tipo_usuario", "fecha") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /var/www/condor-proyecto/protected/controllers/UsuariosController.php (73)
+in /var/www/condor-proyecto/index.php (13)
+2013/02/16 21:36:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  la sintaxis de entrada no es válida para tipo date: «1»
+LINE 1: ...o", "fecha") VALUES ('1', '1', '1', '1', '1', '1', '1', '1')
+                                                                   ^. The SQL statement executed was: INSERT INTO "usuarios" ("login", "password", "nombre", "apellido", "correo_electronico", "profesion", "tipo_usuario", "fecha") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /var/www/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/condor-proyecto/protected/controllers/UsuariosController.php(73): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): UsuariosController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=usuarios/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/create
+---
+2013/02/16 21:43:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «temas» viola la llave foránea «temas_id_usuario_fkey»
+DETAIL:  La llave (id_usuario)=(1) no está presente en la tabla «usuarios».. The SQL statement executed was: INSERT INTO "temas" ("nombre", "descripcion", "id_usuario") VALUES (:yp0, :yp1, :yp2).
+in /var/www/condor-proyecto/protected/controllers/TemaController.php (73)
+in /var/www/condor-proyecto/index.php (13)
+2013/02/16 21:43:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «temas» viola la llave foránea «temas_id_usuario_fkey»
+DETAIL:  La llave (id_usuario)=(1) no está presente en la tabla «usuarios».. The SQL statement executed was: INSERT INTO "temas" ("nombre", "descripcion", "id_usuario") VALUES (:yp0, :yp1, :yp2)' in /var/www/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/condor-proyecto/protected/controllers/TemaController.php(73): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): TemaController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tema/create')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=tema/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=tema/create
+---
+2013/02/16 21:44:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario/create".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/create')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=usuario/create
+---
+2013/02/16 21:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario/create".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/create')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=usuario/create
+---
+2013/02/16 21:56:20 [error] [exception.CDbException] exception 'CDbException' with message 'The table "eva_respuesta" for active record class "EvaRespuesta" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(EvaRespuesta))
+#1 /var/www/yii/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord::model('EvaRespuesta')
+#2 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#3 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#4 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#6 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#13 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=gii/crud
+---
+2013/02/16 21:56:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "eva_respuesta" for active record class "EvaRespuesta" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(EvaRespuesta))
+#1 /var/www/yii/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord::model('EvaRespuesta')
+#2 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#3 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#4 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#6 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#13 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=gii/crud
+---
+2013/02/16 22:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=site/index
+---
+2013/02/16 22:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=site/index
+---
+2013/02/16 22:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=site/index
+---
+2013/02/16 22:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=site/index
+---
+2013/02/16 22:03:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=Usuario/index
+---
+2013/02/16 22:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=usuario/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuario/index
+---
+2013/02/16 22:06:27 [error] [exception.CException] exception 'CException' with message 'Property "Movimientos.usuario" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('usuario')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('usuario')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Movimientos), 'usuario')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Movimientos), 'usuario', Array)
+#4 /var/www/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(Movimientos), 'usuario', Array)
+#5 /var/www/condor-proyecto/protected/views/movimientos/_form.php(50): CActiveForm->textField(Object(Movimientos), 'usuario', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#9 /var/www/condor-proyecto/protected/views/movimientos/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#11 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/condor-proyecto/protected/controllers/MovimientosController.php(79): CController->render('create', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): MovimientosController->actionCreate()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movimientos/cre...')
+#26 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=movimientos/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:46 [error] [exception.CException] exception 'CException' with message 'Property "Movimientos.usuario" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('usuario')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('usuario')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Movimientos), 'usuario')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Movimientos), 'usuario', Array)
+#4 /var/www/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(Movimientos), 'usuario', Array)
+#5 /var/www/condor-proyecto/protected/views/movimientos/_form.php(50): CActiveForm->textField(Object(Movimientos), 'usuario', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#9 /var/www/condor-proyecto/protected/views/movimientos/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#11 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/condor-proyecto/protected/controllers/MovimientosController.php(79): CController->render('create', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): MovimientosController->actionCreate()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movimientos/cre...')
+#26 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=movimientos/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:47 [error] [exception.CException] exception 'CException' with message 'Property "Movimientos.usuario" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('usuario')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('usuario')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Movimientos), 'usuario')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Movimientos), 'usuario', Array)
+#4 /var/www/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(Movimientos), 'usuario', Array)
+#5 /var/www/condor-proyecto/protected/views/movimientos/_form.php(50): CActiveForm->textField(Object(Movimientos), 'usuario', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#9 /var/www/condor-proyecto/protected/views/movimientos/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#11 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/condor-proyecto/protected/controllers/MovimientosController.php(79): CController->render('create', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): MovimientosController->actionCreate()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movimientos/cre...')
+#26 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=movimientos/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Movimiento/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Movimiento/inde...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=Movimiento/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:07:06 [error] [exception.CException] exception 'CException' with message 'Property "Movimientos.usuario" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('usuario')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('usuario')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Movimientos), 'usuario')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Movimientos), 'usuario', Array)
+#4 /var/www/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(Movimientos), 'usuario', Array)
+#5 /var/www/condor-proyecto/protected/views/movimientos/_form.php(50): CActiveForm->textField(Object(Movimientos), 'usuario', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#9 /var/www/condor-proyecto/protected/views/movimientos/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#11 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/condor-proyecto/protected/controllers/MovimientosController.php(79): CController->render('create', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): MovimientosController->actionCreate()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movimientos/cre...')
+#26 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=movimientos/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=movimientos/index
+---
+2013/02/16 22:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=usuarios/index
+---
+2013/02/16 22:11:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "temas/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('temas/index')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=temas/index
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=temas/index
+---
+2013/02/16 22:12:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «temas» viola la llave foránea «temas_id_usuario_fkey»
+DETAIL:  La llave (id_usuario)=(1) no está presente en la tabla «usuarios».. The SQL statement executed was: INSERT INTO "temas" ("nombre", "descripcion", "id_usuario") VALUES (:yp0, :yp1, :yp2).
+in /var/www/condor-proyecto/protected/controllers/TemaController.php (73)
+in /var/www/condor-proyecto/index.php (13)
+2013/02/16 22:12:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «temas» viola la llave foránea «temas_id_usuario_fkey»
+DETAIL:  La llave (id_usuario)=(1) no está presente en la tabla «usuarios».. The SQL statement executed was: INSERT INTO "temas" ("nombre", "descripcion", "id_usuario") VALUES (:yp0, :yp1, :yp2)' in /var/www/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/condor-proyecto/protected/controllers/TemaController.php(73): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): TemaController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tema/create')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/condor-proyecto/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/condor-proyecto/index.php?r=tema/create
+HTTP_REFERER=http://localhost/condor-proyecto/index.php?r=tema/create
+---
