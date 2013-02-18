@@ -1,3 +1,12 @@
+/* Getting the new tags to behave */
+/*
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline } /*Fuentes nuevas Css*/*/
+
+#page {
+    padding-top: 60px;
+}
+
 body
 {
 	margin: 0;
@@ -5,8 +14,12 @@ body
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
+	font-size:100%;
 }
-
+/*
+html { min-width:1000px;} 
+html, body { height:100%;}     /*Nuevas lineas para darle un width minimo*/
+*/
 #page
 {
 	margin-top: 5px;

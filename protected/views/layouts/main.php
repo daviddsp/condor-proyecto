@@ -1,6 +1,6 @@
 <?php /* @var $this Controller */ ?>
 <!DOCTYPE html >
-<html xml:lang="es" lang="es">
+<html lang="es">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<!-- <meta name="language" content="es"/> -->
@@ -15,6 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
+	<!-- Css de prueba bootstrap -->
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css" />
+	
+	<!-- Css de prueba bootstrap -->
+	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 

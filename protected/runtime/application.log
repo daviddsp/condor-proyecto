@@ -1298,3 +1298,314 @@ REQUEST_URI=/condor-proyecto/index.php?r=movimientos/index
 in /var/www/condor-proyecto/protected/views/layouts/main.php (58)
 in /var/www/condor-proyecto/protected/views/layouts/column2.php (22)
 in /var/www/condor-proyecto/protected/controllers/MovimientosController.php (128)
+2013/02/17 18:43:09 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:12 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:12 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:12 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:12 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:13 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:13 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:13 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:13 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:13 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:13 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:14 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:14 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:14 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:14 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:15 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:15 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:15 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:15 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:16 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:16 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:43:16 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /var/www/yii/framework/web/CWebApplication.php(354): require()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/condor-proyecto-prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/condor-proyecto-prueba/index.php
+in /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php (4)
+in /var/www/condor-proyecto-prueba/index.php (13)
+2013/02/17 18:59:49 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/condor-proyecto-prueba/protected/views/site/contact.php(35): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/condor-proyecto-prueba/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/condor-proyecto-prueba/index.php?r=site/contact
+HTTP_REFERER=http://localhost/condor-proyecto-prueba/index.php?r=site/page&view=about
+---
+2013/02/17 19:08:59 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/condor-proyecto-prueba/protected/views/site/contact.php(35): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/condor-proyecto-prueba/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/condor-proyecto-prueba/index.php?r=site/contact
+HTTP_REFERER=http://localhost/condor-proyecto-prueba/index.php?r=site/page&view=about
+---
+2013/02/17 19:21:36 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/condor-proyecto-prueba/protected/views/site/contact.php(35): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/condor...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/condor-proyecto-prueba/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/condor-proyecto-prueba/index.php?r=site/contact
+HTTP_REFERER=http://localhost/condor-proyecto-prueba/index.php?r=site/page&view=about
+---
